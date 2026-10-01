@@ -253,7 +253,7 @@ def main() -> None:
     <div>
       <a class="brand" href="#top">{LOGO}<span>SZL Holdings</span></a>
       <p style="margin-top:.8rem;max-width:36ch">Governed AI. Evidence you can inspect. Work you can verify.</p>
-      <p class="tag">Stephen Lutar · Poughkeepsie, NY · ORCID 0009-0001-0110-4173</p>
+      <p class="tag">Stephen Lutar · ORCID 0009-0001-0110-4173</p>
       <p class="tag">Snapshot {E(observed)} · page built from data/estate.json</p>
     </div>
     <div><h4>Front doors</h4><ul>

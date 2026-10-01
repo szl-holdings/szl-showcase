@@ -661,23 +661,13 @@
      "surface": null
     },
     {
-     "name": "szl-org-health",
-     "url": "https://github.com/szl-holdings/szl-org-health",
-     "desc": "Live fail-closed census of GitHub and Hugging Face estates (private).",
-     "lang": "Python",
-     "pushed": "2026-09-30",
-     "private": true,
-     "role": "Org health",
-     "surface": null
-    },
-    {
      "name": "szl-command-center",
-     "url": "https://github.com/szl-holdings/szl-command-center",
-     "desc": "Governed business observability; every panel carries a truth state (private).",
+     "url": "https://szl-command-center.pplx.app",
+     "desc": "Governed business observability; every panel carries a truth state (VERIFIED / UNKNOWN / UNAVAILABLE) and an evidence reference.",
      "lang": "Python",
      "pushed": "2026-10-01",
-     "private": true,
-     "role": "Command Center",
+     "private": false,
+     "role": "Command Center \u00b7 public demo",
      "surface": null
     }
    ]
