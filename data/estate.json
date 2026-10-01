@@ -1,0 +1,1338 @@
+{
+ "observed": "2026-10-01T01:10Z",
+ "counts": {
+  "repos": 132,
+  "active": 103,
+  "public_active": 92,
+  "archived": 29,
+  "models": 50,
+  "datasets": 35,
+  "spaces": 33,
+  "spaces_reachable": 33,
+  "kernels": 15,
+  "pypi": 19,
+  "open_prs": 24
+ },
+ "layers": [
+  {
+   "id": "front-doors",
+   "title": "Front doors",
+   "lede": "Five public origins. One story. GitHub is the source of truth; everything downstream mirrors it.",
+   "items": [
+    {
+     "name": "a-11-oy.com",
+     "url": "https://a-11-oy.com",
+     "desc": "The product. A11oy living command fabric \u2014 governed actions that emit DSSE-signed, hash-chained receipts.",
+     "kind": "product",
+     "status": "200 \u00b7 Cloudflare \u00b7 HF Docker Space origin"
+    },
+    {
+     "name": "a11oy.net",
+     "url": "https://a11oy.net",
+     "desc": "The proof registry. RECORD, GovernedAction/v1 spec, diligence paths, pricing, known bounds.",
+     "kind": "proof",
+     "status": "200 \u00b7 GitHub Pages \u00b7 DNSSEC"
+    },
+    {
+     "name": "github.com/szl-holdings",
+     "url": "https://github.com/szl-holdings",
+     "desc": "Canonical source. 132 repositories, 103 active, org-wide control plane in .github.",
+     "kind": "source",
+     "status": "132 repos \u00b7 24 open PRs"
+    },
+    {
+     "name": "huggingface.co/SZLHOLDINGS",
+     "url": "https://huggingface.co/SZLHOLDINGS",
+     "desc": "Artifacts. Models, software kernels, datasets, and Spaces published from GitHub source.",
+     "kind": "artifacts",
+     "status": "50 models \u00b7 35 datasets \u00b7 33 Spaces"
+    },
+    {
+     "name": "PyPI \u00b7 betterwithage",
+     "url": "https://pypi.org/user/betterwithage/",
+     "desc": "The receipt stack, installable. OIDC trusted publishing, PEP 740 attestations.",
+     "kind": "packages",
+     "status": "19 packages verified live"
+    }
+   ]
+  },
+  {
+   "id": "flagships",
+   "title": "Flagships",
+   "lede": "One command substrate, one defense application, one inference flagship, one vertical that became a product.",
+   "items": [
+    {
+     "name": "a11oy",
+     "url": "https://github.com/szl-holdings/a11oy",
+     "desc": "a11oy",
+     "lang": "Python",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Command substrate",
+     "surface": "https://a-11-oy.com"
+    },
+    {
+     "name": "killinchu",
+     "url": "https://github.com/szl-holdings/killinchu",
+     "desc": "Counter-UAS reference at /elite. Tracks, fusion, ROE, BFT witness closure, DSSE receipt per intercept decision. 803 tests.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Counter-UAS reference",
+     "surface": "https://a-11-oy.com/killinchu"
+    },
+    {
+     "name": "szl-router",
+     "url": "https://github.com/szl-holdings/szl-router",
+     "desc": "Sovereign-first OpenAI-compatible LLM router. szl-auto / szl-fast / szl-large / szl-coder with routing receipts. Runtime mirror: SZLHOLDINGS",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Inference flagship",
+     "surface": "https://a-11-oy.com/code"
+    },
+    {
+     "name": "david-leads",
+     "url": "https://github.com/szl-holdings/david-leads",
+     "desc": "Public insurance-intelligence vertical: receipt-per-decision scoring, \u039b-spine, DSSE with honest unsigned fallback, offline verifier.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Insurance vertical",
+     "surface": "https://huggingface.co/spaces/SZLHOLDINGS/david-leads"
+    }
+   ]
+  },
+  {
+   "id": "verticals",
+   "title": "Public domain bodies",
+   "lede": "Independent vertical front doors built on the same governed factory. Sentra is a capability plane, not a product.",
+   "items": [
+    {
+     "name": "Terra",
+     "url": "https://huggingface.co/spaces/SZLHOLDINGS/terra",
+     "desc": "Terra vertical Space.",
+     "role": "Vertical",
+     "status": "RUNNING"
+    },
+    {
+     "name": "Counsel",
+     "url": "https://huggingface.co/spaces/SZLHOLDINGS/counsel",
+     "desc": "PRISM Counsel vertical Space.",
+     "role": "Vertical",
+     "status": "RUNNING"
+    },
+    {
+     "name": "Finance",
+     "url": "https://huggingface.co/spaces/SZLHOLDINGS/finance",
+     "desc": "PURIQ Finance \u2014 receipted analytics backend.",
+     "role": "Vertical",
+     "status": "RUNNING"
+    },
+    {
+     "name": "Lyte",
+     "url": "https://huggingface.co/spaces/SZLHOLDINGS/lyte",
+     "desc": "Lyte design-partner cell on the a11oy factory compiler.",
+     "role": "Vertical",
+     "status": null
+    },
+    {
+     "name": "vertical-services",
+     "url": "https://github.com/szl-holdings/vertical-services",
+     "desc": "Live deployable FastAPI services for the vertical Spaces",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Shared deploy source",
+     "surface": null
+    },
+    {
+     "name": "a11oy-factory",
+     "url": "https://github.com/szl-holdings/a11oy-factory",
+     "desc": "Decision Cell Compiler",
+     "lang": "TypeScript",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Decision Cell Compiler",
+     "surface": null
+    }
+   ]
+  },
+  {
+   "id": "proof",
+   "title": "Proof and receipt layer",
+   "lede": "The part that makes the rest checkable. Formats, signers, ledgers, witnesses, and a Lean 4 boundary that keeps \u039b a labeled conjecture.",
+   "items": [
+    {
+     "name": "governed-receipt-spec",
+     "url": "https://github.com/szl-holdings/governed-receipt-spec",
+     "desc": "Open format for a governed AI inference decision receipt",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Open format",
+     "surface": null
+    },
+    {
+     "name": "governance-as-code",
+     "url": "https://github.com/szl-holdings/governance-as-code",
+     "desc": "GovernedAction/v1 receipt format, CI gates, and the 12-step governed-action loop.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "GovernedAction/v1",
+     "surface": null
+    },
+    {
+     "name": "szl-receipt",
+     "url": "https://github.com/szl-holdings/szl-receipt",
+     "desc": "Shared signed-receipt library",
+     "lang": "Python",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Signer library",
+     "surface": null
+    },
+    {
+     "name": "khipu-consensus",
+     "url": "https://github.com/szl-holdings/khipu-consensus",
+     "desc": "3-of-4 multi-party-witnessed agreement",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "BFT witness",
+     "surface": null
+    },
+    {
+     "name": "szl-lake",
+     "url": "https://github.com/szl-holdings/szl-lake",
+     "desc": "Append-only DSSE receipt store across SZL organs. GitHub origin, Hugging Face mirror.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Append-only ledger",
+     "surface": null
+    },
+    {
+     "name": "lutar-lean",
+     "url": "https://github.com/szl-holdings/lutar-lean",
+     "desc": "Lean 4 + Mathlib formalization of the \u039b aggregator. \u039b uniqueness stays Conjecture 1.",
+     "lang": "Lean",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Formal boundary",
+     "surface": null
+    },
+    {
+     "name": "szl-ci-witness",
+     "url": "https://github.com/szl-holdings/szl-ci-witness",
+     "desc": "Every workflow run appends a hash-chained receipt.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "CI as witness",
+     "surface": null
+    },
+    {
+     "name": "szl-eclipse",
+     "url": "https://github.com/szl-holdings/szl-eclipse",
+     "desc": "Who verifies the verifier: mutation testing for receipt verifiers.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Verifier mutation tests",
+     "surface": null
+    },
+    {
+     "name": "szl-crosscheck",
+     "url": "https://github.com/szl-holdings/szl-crosscheck",
+     "desc": "Two independent harnesses' receipt chains compared",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Cross-implementation",
+     "surface": null
+    },
+    {
+     "name": "szl-gov",
+     "url": "https://github.com/szl-holdings/szl-gov",
+     "desc": "Signed, offline-verifiable audit of the estate itself.",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Estate truth layer",
+     "surface": null
+    },
+    {
+     "name": "szl-drift",
+     "url": "https://github.com/szl-holdings/szl-drift",
+     "desc": "Compare a-11-oy.com, a11oy.net, and a pinned source",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Origin drift",
+     "surface": null
+    },
+    {
+     "name": "szl-pin",
+     "url": "https://github.com/szl-holdings/szl-pin",
+     "desc": "One SHA-256 commits to every repo head in the frontier.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Estate pin",
+     "surface": null
+    },
+    {
+     "name": "prove-it",
+     "url": "https://szlholdings-prove-it.static.hf.space/",
+     "desc": "Offline receipt verifier \u2014 static, runs in your browser, no server trust.",
+     "role": "Offline verifier",
+     "status": "200"
+    }
+   ]
+  },
+  {
+   "id": "planes",
+   "title": "Evidence planes and integrations",
+   "lede": "Drop-in witnesses for the tools teams already run.",
+   "items": [
+    {
+     "name": "szl-evidence-litellm",
+     "url": "https://github.com/szl-holdings/szl-evidence-litellm",
+     "desc": "Tamper-evident, hash-chained receipts for every LiteLLM request.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "LiteLLM plugin",
+     "surface": null
+    },
+    {
+     "name": "vsp-otel",
+     "url": "https://github.com/szl-holdings/vsp-otel",
+     "desc": "OTLP collector and signed-span exporter",
+     "lang": "Python",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "OpenTelemetry",
+     "surface": null
+    },
+    {
+     "name": "szl-guardrail-receipt",
+     "url": "https://github.com/szl-holdings/szl-guardrail-receipt",
+     "desc": "Wrap any LLM guardrail verdict (Llama-Guard, NeMo, guardrails-ai) in a signed receipt.",
+     "lang": "Python",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Guardrail witness",
+     "surface": null
+    },
+    {
+     "name": "szl-energy-attest",
+     "url": "https://github.com/szl-holdings/szl-energy-attest",
+     "desc": "Per-inference signed joule receipts",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Energy receipts",
+     "surface": null
+    },
+    {
+     "name": "hatun-mcp",
+     "url": "https://github.com/szl-holdings/hatun-mcp",
+     "desc": "Doctrine-aware Model Context Protocol server. 16 SZL tools.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "MCP server",
+     "surface": null
+    },
+    {
+     "name": "szl-calibration",
+     "url": "https://github.com/szl-holdings/szl-calibration",
+     "desc": "Exact calibration metrics (ECE/MCE/Brier), weight gates, receipt chain.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Calibration plane",
+     "surface": null
+    },
+    {
+     "name": "szl-skills",
+     "url": "https://github.com/szl-holdings/szl-skills",
+     "desc": "Fail-closed evidence and decision skills for Claude.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Claude skills",
+     "surface": null
+    }
+   ]
+  },
+  {
+   "id": "kernels",
+   "title": "Kernels and models",
+   "lede": "Software kernels on the Hugging Face Kernel Hub, plus compact trained models. Each card states what it is and what it is not.",
+   "kernels": [
+    "szl-governed-norm",
+    "szl-lambda-gate",
+    "governed-inference-meter",
+    "szl-kernels",
+    "szl-blocked",
+    "szl-govsign",
+    "szl-provctl",
+    "szl-invariants",
+    "szl-ouroboros",
+    "szl-formulas",
+    "YARQA-ATTN",
+    "szl-receipt-attn",
+    "szl-maskmod",
+    "szl-block-kv",
+    "szl-khipu-kernels"
+   ],
+   "models": [
+    {
+     "id": "chaski",
+     "dl": 3070,
+     "url": "https://huggingface.co/SZLHOLDINGS/chaski"
+    },
+    {
+     "id": "SZL-Khipu-1.5B",
+     "dl": 2980,
+     "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B"
+    },
+    {
+     "id": "SZL-Khipu-1.5B-GGUF",
+     "dl": 1998,
+     "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF"
+    },
+    {
+     "id": "SZL-Forge-1.5B-ReceiptAgent",
+     "dl": 877,
+     "url": "https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent"
+    },
+    {
+     "id": "szl-receiptagent-qwen35-0.8b-v2-merged",
+     "dl": 682,
+     "url": "https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2-merged"
+    },
+    {
+     "id": "szl-triage-qwen3.5-0.8b-lora-study5",
+     "dl": 486,
+     "url": "https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora-study5"
+    },
+    {
+     "id": "szl-receiptagent-qwen35-0.8b-v2",
+     "dl": 426,
+     "url": "https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2"
+    },
+    {
+     "id": "A11OY-MINI",
+     "dl": 314,
+     "url": "https://huggingface.co/SZLHOLDINGS/A11OY-MINI"
+    },
+    {
+     "id": "chaski-5050",
+     "dl": 139,
+     "url": "https://huggingface.co/SZLHOLDINGS/chaski-5050"
+    },
+    {
+     "id": "chaski-r2",
+     "dl": 138,
+     "url": "https://huggingface.co/SZLHOLDINGS/chaski-r2"
+    },
+    {
+     "id": "szl-receiptagent-qwen35-0.8b-v3",
+     "dl": 134,
+     "url": "https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v3"
+    },
+    {
+     "id": "KHIPU-R2",
+     "dl": 118,
+     "url": "https://huggingface.co/SZLHOLDINGS/KHIPU-R2"
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "benchmarks",
+   "title": "Benchmarks that ship receipts",
+   "lede": "Honest lanes: percentiles, curves, and nDCG with the chain that produced them.",
+   "items": [
+    {
+     "name": "szl-retrieval-bench",
+     "url": "https://github.com/szl-holdings/szl-retrieval-bench",
+     "desc": "BM25, RRF hybrid fusion, nDCG/Recall",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Retrieval",
+     "surface": null
+    },
+    {
+     "name": "szl-engine-bench",
+     "url": "https://github.com/szl-holdings/szl-engine-bench",
+     "desc": "TTFT/throughput percentiles, goodput-at-SLO.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Inference engines",
+     "surface": null
+    },
+    {
+     "name": "szl-quant-bench",
+     "url": "https://github.com/szl-holdings/szl-quant-bench",
+     "desc": "Quality-curve bench across 2\u201316 bit.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Quantization",
+     "surface": null
+    },
+    {
+     "name": "frontier-bench",
+     "url": "https://github.com/szl-holdings/frontier-bench",
+     "desc": "Vendor-neutral OpenAI-compatible benchmark harness.",
+     "lang": "Python",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Frontier harness",
+     "surface": null
+    },
+    {
+     "name": "szl-wave1-report",
+     "url": "https://github.com/szl-holdings/szl-wave1-report",
+     "desc": "Verifies the harness receipt chains end to end.",
+     "lang": "Python",
+     "pushed": "2026-09-27",
+     "private": false,
+     "role": "Wave 1 capstone",
+     "surface": null
+    },
+    {
+     "name": "szl-bench-suite",
+     "url": "https://szlholdings-szl-bench-suite.static.hf.space/",
+     "desc": "Published bench suite surface.",
+     "role": "Space",
+     "status": "200"
+    }
+   ]
+  },
+  {
+   "id": "compute",
+   "title": "Training, serving, and own-metal",
+   "lede": "QLoRA kits, a governed GPU bridge, and the measured-energy mesh behind every joule claim.",
+   "items": [
+    {
+     "name": "szl-forge",
+     "url": "https://github.com/szl-holdings/szl-forge",
+     "desc": "QLoRA kit that fine-tunes an open base model into SZL-1 on owner hardware, with receipts.",
+     "lang": "Python",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Training kit",
+     "surface": null
+    },
+    {
+     "name": "szl-gpu-bridge",
+     "url": "https://github.com/szl-holdings/szl-gpu-bridge",
+     "desc": "DSSE-signed job specs \u2192 owner GPU mesh.",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Governed GPU bridge",
+     "surface": null
+    },
+    {
+     "name": "szl-mesh",
+     "url": "https://github.com/szl-holdings/szl-mesh",
+     "desc": "Deterministic disconnected-state CRDT convergence command for the GPU/energy mesh.",
+     "lang": "Python",
+     "pushed": "2026-09-28",
+     "private": false,
+     "role": "Own-metal mesh",
+     "surface": null
+    },
+    {
+     "name": "szl-serve",
+     "url": "https://github.com/szl-holdings/szl-serve",
+     "desc": "Canonical governed serve recipe",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Serve recipe",
+     "surface": null
+    },
+    {
+     "name": "szl-typesafe-triage",
+     "url": "https://github.com/szl-holdings/szl-typesafe-triage",
+     "desc": "Deterministic, receipt-bearing typed triage engine; five-seed study at 11 of 12 release gates.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Triage model study",
+     "surface": null
+    },
+    {
+     "name": "uds-bundles",
+     "url": "https://github.com/szl-holdings/uds-bundles",
+     "desc": "UDS Zarf bundles for a11oy and killinchu.",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Air-gap packaging",
+     "surface": null
+    },
+    {
+     "name": "szl-build-env",
+     "url": "https://github.com/szl-holdings/szl-build-env",
+     "desc": "Development topology and runtime acceptance toolkit.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Runtime acceptance",
+     "surface": null
+    }
+   ]
+  },
+  {
+   "id": "control-plane",
+   "title": "Control plane",
+   "lede": "The org governs itself with the same discipline: gates, digests, census, and receipts for the estate.",
+   "items": [
+    {
+     "name": "platform",
+     "url": "https://github.com/szl-holdings/platform",
+     "desc": "Substrate runtime, agentic loops, MCP server, CI gates, doctrine checks.",
+     "lang": "TypeScript",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Monorepo spine",
+     "surface": null
+    },
+    {
+     "name": ".github",
+     "url": "https://github.com/szl-holdings/.github",
+     "desc": "Profile, reusable workflows, provenance gates, estate reconciliation, HF publication lanes.",
+     "lang": "HTML",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Org control plane",
+     "surface": null
+    },
+    {
+     "name": "szl-substrate",
+     "url": "https://github.com/szl-holdings/szl-substrate",
+     "desc": "Installable shared substrate for a11oy and killinchu.",
+     "lang": "Python",
+     "pushed": "2026-09-28",
+     "private": false,
+     "role": "Shared package",
+     "surface": null
+    },
+    {
+     "name": "szl-doctrine",
+     "url": "https://github.com/szl-holdings/szl-doctrine",
+     "desc": "Doctrine v11 and org-wide governance workflows.",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Doctrine",
+     "surface": null
+    },
+    {
+     "name": "szl-brand",
+     "url": "https://github.com/szl-holdings/szl-brand",
+     "desc": "Tokens, logos, social previews, visual doctrine.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "KANCHAY design system",
+     "surface": null
+    },
+    {
+     "name": "szl-runbook-catalog",
+     "url": "https://github.com/szl-holdings/szl-runbook-catalog",
+     "desc": "Registry of receipted, hash-committed task specs.",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Runbook catalog",
+     "surface": null
+    },
+    {
+     "name": "szl-org-health",
+     "url": "https://github.com/szl-holdings/szl-org-health",
+     "desc": "Live fail-closed census of GitHub and Hugging Face estates (private).",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": true,
+     "role": "Org health",
+     "surface": null
+    },
+    {
+     "name": "szl-command-center",
+     "url": "https://github.com/szl-holdings/szl-command-center",
+     "desc": "Governed business observability; every panel carries a truth state (private).",
+     "lang": "Python",
+     "pushed": "2026-10-01",
+     "private": true,
+     "role": "Command Center",
+     "surface": null
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": "Research and holographic surfaces",
+   "lede": "Preprints and proofs on one side; the experimental, holographic estate on the other \u2014 labeled as such.",
+   "items": [
+    {
+     "name": "szl-papers",
+     "url": "https://github.com/szl-holdings/szl-papers",
+     "desc": "Preprints, thesis lineage, bounty problems, Zenodo metadata gate.",
+     "lang": "TeX",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Academic corpus",
+     "surface": null
+    },
+    {
+     "name": "szl-constellation",
+     "url": "https://github.com/szl-holdings/szl-constellation",
+     "desc": "49 archived estates as one searchable constellation with live proof panels.",
+     "lang": "Python",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Living archive",
+     "surface": null
+    },
+    {
+     "name": "holographic-unify",
+     "url": "https://github.com/szl-holdings/holographic-unify",
+     "desc": "HOLOGRAM",
+     "lang": "TypeScript",
+     "pushed": "2026-10-01",
+     "private": false,
+     "role": "Estate command desk",
+     "surface": null
+    },
+    {
+     "name": "immune",
+     "url": "https://github.com/szl-holdings/immune",
+     "desc": "IMMUNE",
+     "lang": "TypeScript",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Fail-closed kernel",
+     "surface": null
+    },
+    {
+     "name": "anatomy",
+     "url": "https://github.com/szl-holdings/anatomy",
+     "desc": "3D navigable governed-AI organ substrate.",
+     "lang": "JavaScript",
+     "pushed": "2026-09-29",
+     "private": false,
+     "role": "Living anatomy",
+     "surface": null
+    },
+    {
+     "name": "ayllu",
+     "url": "https://github.com/szl-holdings/ayllu",
+     "desc": "Evidence-bound holographic agent council.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Agent council",
+     "surface": null
+    },
+    {
+     "name": "szl-quant",
+     "url": "https://github.com/szl-holdings/szl-quant",
+     "desc": "Doctrine-governed quant research engine",
+     "lang": "JavaScript",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Quant evidence",
+     "surface": null
+    },
+    {
+     "name": "szl-second-brain",
+     "url": "https://github.com/szl-holdings/szl-second-brain",
+     "desc": "Handles-only second-brain retrieval hologram.",
+     "lang": "Python",
+     "pushed": "2026-09-30",
+     "private": false,
+     "role": "Governed retrieval",
+     "surface": null
+    }
+   ]
+  }
+ ],
+ "datasets": [
+  {
+   "id": "killinchu-osint-corpus",
+   "dl": 74157,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/killinchu-osint-corpus"
+  },
+  {
+   "id": "szl-lake",
+   "dl": 5382,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-lake"
+  },
+  {
+   "id": "a11oy-verifiable-corpus",
+   "dl": 3495,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/a11oy-verifiable-corpus"
+  },
+  {
+   "id": "szl-artifacts",
+   "dl": 865,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-artifacts"
+  },
+  {
+   "id": "uds-governance-receipts",
+   "dl": 839,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/uds-governance-receipts"
+  },
+  {
+   "id": "szl-frontier-evaluation-receipts",
+   "dl": 791,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-frontier-evaluation-receipts"
+  },
+  {
+   "id": "lean-proofs-v1",
+   "dl": 758,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/lean-proofs-v1"
+  },
+  {
+   "id": "test-results",
+   "dl": 692,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/test-results"
+  },
+  {
+   "id": "thesis-v18-formal-verification",
+   "dl": 663,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/thesis-v18-formal-verification"
+  },
+  {
+   "id": "uds-spans-receipts",
+   "dl": 618,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/uds-spans-receipts"
+  },
+  {
+   "id": "doctrine-v10-v11",
+   "dl": 613,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/doctrine-v10-v11"
+  },
+  {
+   "id": "thesis-corpus-v18",
+   "dl": 591,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/thesis-corpus-v18"
+  },
+  {
+   "id": "why-we-lead",
+   "dl": 557,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/why-we-lead"
+  },
+  {
+   "id": "canonical-formulas-v1",
+   "dl": 550,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/canonical-formulas-v1"
+  },
+  {
+   "id": "readiness-runs",
+   "dl": 547,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/readiness-runs"
+  },
+  {
+   "id": "szl-frontier-covenant",
+   "dl": 547,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-frontier-covenant"
+  },
+  {
+   "id": "uds-bundles-v1",
+   "dl": 544,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/uds-bundles-v1"
+  },
+  {
+   "id": "governed-receipts-bench",
+   "dl": 536,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/governed-receipts-bench"
+  },
+  {
+   "id": "szl-estate-graph",
+   "dl": 536,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-estate-graph"
+  },
+  {
+   "id": "szl-quant-sft-v1",
+   "dl": 535,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-sft-v1"
+  },
+  {
+   "id": "ouroboros-arxiv-preprint",
+   "dl": 503,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/ouroboros-arxiv-preprint"
+  },
+  {
+   "id": "rag-corpus-v1",
+   "dl": 503,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/rag-corpus-v1"
+  },
+  {
+   "id": "oac-clinical-transport-observability-synthetic",
+   "dl": 502,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/oac-clinical-transport-observability-synthetic"
+  },
+  {
+   "id": "model-bom",
+   "dl": 501,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/model-bom"
+  },
+  {
+   "id": "szl-1-doctrine-sft",
+   "dl": 493,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-1-doctrine-sft"
+  },
+  {
+   "id": "governed-agent-bench",
+   "dl": 487,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/governed-agent-bench"
+  },
+  {
+   "id": "SZLHOLDINGS",
+   "dl": 469,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/SZLHOLDINGS"
+  },
+  {
+   "id": "alloy-sovereign-eval-runs",
+   "dl": 468,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/alloy-sovereign-eval-runs"
+  },
+  {
+   "id": "szl-second-brain-inrepo",
+   "dl": 465,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-second-brain-inrepo"
+  },
+  {
+   "id": "receipted-unsloth",
+   "dl": 465,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/receipted-unsloth"
+  },
+  {
+   "id": "k-verify-benchmark-v1",
+   "dl": 461,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/k-verify-benchmark-v1"
+  },
+  {
+   "id": "lean-theorem-tree",
+   "dl": 458,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/lean-theorem-tree"
+  },
+  {
+   "id": "energy-attested-runs",
+   "dl": 449,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/energy-attested-runs"
+  },
+  {
+   "id": "release-assets",
+   "dl": 380,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/release-assets"
+  },
+  {
+   "id": "szl-marketing-factbase",
+   "dl": 0,
+   "url": "https://huggingface.co/datasets/SZLHOLDINGS/szl-marketing-factbase"
+  }
+ ],
+ "spaces": [
+  {
+   "id": "a11oy",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/a11oy",
+   "stage": null,
+   "root": 200
+  },
+  {
+   "id": "ayllu",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/ayllu",
+   "stage": null,
+   "root": 200
+  },
+  {
+   "id": "counsel",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/counsel",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "david-leads",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/david-leads",
+   "stage": null,
+   "root": 200
+  },
+  {
+   "id": "finance",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/finance",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "foundation-confirmation-v2",
+   "sdk": "static",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/foundation-confirmation-v2",
+   "stage": "RUNNING",
+   "root": 404
+  },
+  {
+   "id": "gdw-frontier",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/gdw-frontier",
+   "stage": null,
+   "root": 401
+  },
+  {
+   "id": "governed-receipt-verifier",
+   "sdk": "static",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/governed-receipt-verifier",
+   "stage": "RUNNING",
+   "root": 404
+  },
+  {
+   "id": "holographic-unify",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/holographic-unify",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "immune",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/immune",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "immune-lattice",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/immune-lattice",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "killinchu",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/killinchu",
+   "stage": null,
+   "root": 200
+  },
+  {
+   "id": "llm-router-live",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/llm-router-live",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "lyte",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/lyte",
+   "stage": null,
+   "root": 200
+  },
+  {
+   "id": "oac-system-health-lab",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/oac-system-health-lab",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "prove-it",
+   "sdk": "static",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/prove-it",
+   "stage": "RUNNING",
+   "root": 404
+  },
+  {
+   "id": "sentra",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/sentra",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-atelier",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-atelier",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-bench-suite",
+   "sdk": "static",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-bench-suite",
+   "stage": "RUNNING",
+   "root": 404
+  },
+  {
+   "id": "szl-brand-campaign",
+   "sdk": "static",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-brand-campaign",
+   "stage": "RUNNING",
+   "root": 404
+  },
+  {
+   "id": "szl-command-lab",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-command-lab",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-constellation",
+   "sdk": "gradio",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-constellation",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-forge-lab",
+   "sdk": "static",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-forge-lab",
+   "stage": "RUNNING",
+   "root": 404
+  },
+  {
+   "id": "szl-foundation-confirmation",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-foundation-confirmation",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-frontier",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-frontier",
+   "stage": null,
+   "root": 200
+  },
+  {
+   "id": "szl-khipu",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-khipu",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-marketing-1.1",
+   "sdk": "gradio",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-marketing-1.1",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-model-inference-lab",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-model-inference-lab",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "szl-typesafe-triage",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/szl-typesafe-triage",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "terra",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/terra",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "the-grid",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/the-grid",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "vertical-services",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/vertical-services",
+   "stage": "RUNNING",
+   "root": 200
+  },
+  {
+   "id": "yarqa",
+   "sdk": "docker",
+   "url": "https://huggingface.co/spaces/SZLHOLDINGS/yarqa",
+   "stage": "RUNNING",
+   "root": 200
+  }
+ ],
+ "pypi": [
+  "szl-calibration",
+  "szl-ci-witness",
+  "szl-crosscheck",
+  "szl-eclipse",
+  "szl-energy-attest",
+  "szl-engine-bench",
+  "szl-evidence-litellm",
+  "szl-evidence-mandate",
+  "szl-guardrail-receipt",
+  "szl-invariants",
+  "szl-nemo",
+  "szl-openshell-receipts",
+  "szl-pin",
+  "szl-quant-bench",
+  "szl-receipt-dsse",
+  "szl-receipts",
+  "szl-retrieval-bench",
+  "szl-triage",
+  "vsp-otel"
+ ],
+ "live": [
+  {
+   "url": "https://a-11-oy.com/",
+   "code": 200
+  },
+  {
+   "url": "https://www.a-11-oy.com/",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/",
+   "code": 200
+  },
+  {
+   "url": "https://www.a11oy.net/",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/api/a11oy/v1/honest",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/api/a11oy/v1/status",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/healthz",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/api/a11oy/v1/spaces/health",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/health.json",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/spaces.json",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/pricing",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/contact",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/spec/GovernedAction/v1",
+   "code": 200
+  },
+  {
+   "url": "https://holdings.a-11-oy.com/",
+   "code": 200
+  },
+  {
+   "url": "https://dev.a-11-oy.com/",
+   "code": 200
+  },
+  {
+   "url": "https://gdw.a-11-oy.com/healthz",
+   "code": 200
+  },
+  {
+   "url": "https://gpu.a-11-oy.com/",
+   "code": 530
+  },
+  {
+   "url": "https://gpu2.a-11-oy.com/",
+   "code": 403
+  },
+  {
+   "url": "https://gateway.a-11-oy.com/",
+   "code": 530
+  },
+  {
+   "url": "https://meter.a-11-oy.com/",
+   "code": 530
+  },
+  {
+   "url": "https://meter2.a-11-oy.com/",
+   "code": 530
+  },
+  {
+   "url": "https://szlholdings.com/",
+   "code": "URLError:<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occur"
+  },
+  {
+   "url": "https://www.szlholdings.com/",
+   "code": "URLError:<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+   "url": "https://szl-command-center.pplx.app/",
+   "code": 200
+  },
+  {
+   "url": "https://governedaction-v1.pplx.app/",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/killinchu",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/code",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/pricing",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/verify",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/record/",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/robots.txt",
+   "code": 200
+  },
+  {
+   "url": "https://a-11-oy.com/sitemap.xml",
+   "code": 200
+  },
+  {
+   "url": "https://a11oy.net/sitemap.xml",
+   "code": 200
+  }
+ ]
+}
