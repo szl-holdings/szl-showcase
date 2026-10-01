@@ -126,6 +126,13 @@ def main() -> None:
 <meta property="og:title" content="SZL Holdings — AI that signs its work">
 <meta property="og:description" content="One ecosystem, one doctrine: every claim carries a cryptographic receipt you can verify. Product at a-11-oy.com, proof at a11oy.net, source on GitHub, artifacts on Hugging Face.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://szl-showcase.pplx.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SZL Holdings — AI that signs its work">
+<meta name="twitter:description" content="Every claim carries a cryptographic receipt you can verify. Product, proof, source, artifacts — one doctrine.">
+<meta name="twitter:image" content="https://szl-showcase.pplx.app/assets/og.png">
 <meta name="theme-color" content="#030F29">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="styles.css">
