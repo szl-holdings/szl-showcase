@@ -64,7 +64,7 @@
     {
      "name": "a11oy",
      "url": "https://github.com/szl-holdings/a11oy",
-     "desc": "a11oy",
+     "desc": "Governed-AI Command Center. Deny by default. Signed receipts. The evidence and control plane for consequential AI-agent actions.",
      "lang": "Python",
      "pushed": "2026-10-01",
      "private": false,
@@ -556,7 +556,7 @@
     {
      "name": "szl-serve",
      "url": "https://github.com/szl-holdings/szl-serve",
-     "desc": "Canonical governed serve recipe",
+     "desc": "Canonical governed serve recipe \u2014 llama.cpp/Ollama CPU honest path with receipts.",
      "lang": "Python",
      "pushed": "2026-09-30",
      "private": false,
@@ -643,7 +643,7 @@
     {
      "name": "szl-brand",
      "url": "https://github.com/szl-holdings/szl-brand",
-     "desc": "Tokens, logos, social previews, visual doctrine.",
+     "desc": "Tokens, logos, social previews, and visual doctrine for every SZL surface \u2014 the KANCHAY design system.",
      "lang": "Python",
      "pushed": "2026-09-30",
      "private": false,
