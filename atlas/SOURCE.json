@@ -1,10 +1,10 @@
 {
-  "schema": "szl.atlas-source-binding/v1",
+  "schema": "szl.atlas-source-binding/v2",
   "evidence_class": "DECLARED",
   "canonical_source": {
     "repository": "szl-holdings/szl-showcase",
     "path": "atlas",
-    "revision_rule": "Resolve this manifest and every listed file from the same GitHub commit."
+    "revision_rule": "Resolve this manifest and current files from the same GitHub commit; resolve retained_import files from retained_import.commit."
   },
   "historical_context": {
     "retained_source_revision": "016bb9a6dc75d739617a11b1eb92c47a25a29a36",
@@ -32,15 +32,15 @@
     },
     {
       "path": "build-atlas.mjs",
-      "bytes": 59835,
-      "sha256": "9e4b28ce095bd44254bbef35fabbec229898546684f87ea74b1a679e150aac7c",
-      "git_blob": "e12ede7b64fb09fb3e474e69191454be717ec9d0"
+      "bytes": 59847,
+      "sha256": "132912db2751b2d11c63a5c675aa0b871d57f2041b19bc3a4c343218375a58a5",
+      "git_blob": "c27a5cd8f914a74440a55a693c7b51240c105262"
     },
     {
       "path": "dist/index.html",
-      "bytes": 243764,
-      "sha256": "26da4cee1aa5f50f86be0d3880caabd71c1e1ecae65e113cd408b82b34bd18f7",
-      "git_blob": "a6d1c00634933a99fc65052d40f4a9d1b5b4cb15"
+      "bytes": 243776,
+      "sha256": "763f252a11934567ace6e384b48ea694d30f76f4b86d1eee332bad73140f3978",
+      "git_blob": "568b776fbaf06318118fb901428a031f050c0009"
     },
     {
       "path": "dist/anatomy-control-plane.json",
@@ -50,9 +50,50 @@
     },
     {
       "path": "tests/anatomy-projection.test.mjs",
-      "bytes": 10868,
-      "sha256": "bc2a984be622de0ca8d8d1213386c86a364931dd792c7ee25e9c2229359b07e7",
-      "git_blob": "ba3799a570cbcd8f5913a84dd4c790adee41dcb2"
+      "bytes": 12111,
+      "sha256": "524f368e96244814222b53d6198d7844d412f35e1a7e6a779c3f9399179b8022",
+      "git_blob": "c59b96ea70d68fba4eaa7084fb6edd8291c1650f"
     }
-  ]
+  ],
+  "retained_import": {
+    "repository": "szl-holdings/szl-showcase",
+    "commit": "70c6888b24465fb62e721e1d666342ef601b2542",
+    "evidence_class": "DECLARED",
+    "files": [
+      {
+        "path": ".gitignore",
+        "bytes": 25,
+        "sha256": "6f0675bcca38d2902efc43c693bfb08d750b723115790260cd1379786999b1fd",
+        "git_blob": "03ca530f48cf3803ecfc46c9a3f6ec11f82c4d17"
+      },
+      {
+        "path": "build-atlas.mjs",
+        "bytes": 59835,
+        "sha256": "9e4b28ce095bd44254bbef35fabbec229898546684f87ea74b1a679e150aac7c",
+        "git_blob": "e12ede7b64fb09fb3e474e69191454be717ec9d0"
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 243764,
+        "sha256": "26da4cee1aa5f50f86be0d3880caabd71c1e1ecae65e113cd408b82b34bd18f7",
+        "git_blob": "a6d1c00634933a99fc65052d40f4a9d1b5b4cb15"
+      },
+      {
+        "path": "dist/anatomy-control-plane.json",
+        "bytes": 2772,
+        "sha256": "698fee8ea5ba02382df3a4df71fd465177e1c99acf53bf9eeb9403056925ece9",
+        "git_blob": "1972b609e8d5b8ded100157b1e907a4d23ecc0dc"
+      },
+      {
+        "path": "tests/anatomy-projection.test.mjs",
+        "bytes": 10868,
+        "sha256": "bc2a984be622de0ca8d8d1213386c86a364931dd792c7ee25e9c2229359b07e7",
+        "git_blob": "ba3799a570cbcd8f5913a84dd4c790adee41dcb2"
+      }
+    ]
+  },
+  "derivation": {
+    "base_commit": "70c6888b24465fb62e721e1d666342ef601b2542",
+    "reason": "Classify observed NO_APP_FILE as adverse evidence; regenerate HTML and extend projection regressions without refreshing historical metadata."
+  }
 }

@@ -627,7 +627,7 @@ const countBy=(items,key)=>items.reduce((counts,item)=>{const value=String(item[
 const formatNumber=value=>new Intl.NumberFormat('en-US').format(Number(value)||0);
 function statusTone(asset){
   const status=String(asset.status||'').toLowerCase();
-  if(/failures at observed revision|declared promotion blocked|runtime_error|build_error|config_error/.test(status))return 'adverse';
+  if(/failures at observed revision|declared promotion blocked|runtime_error|build_error|config_error|no_app_file/.test(status))return 'adverse';
   if(/observed runs successful at revision/.test(status))return 'positive';
   return 'unknown';
 }

@@ -209,6 +209,18 @@ assert.equal(
   data.assets.filter(api.needsReview).length,
 );
 assert.equal(api.statusTone(data.assets.find((asset) => asset.id === "SZLHOLDINGS/szl-science-forum-corpus")), "unknown");
+const missingApp = data.assets.find((asset) => asset.id === "betterwithage/foundation-confirmation-v2");
+assert.equal(missingApp.status, "NO_APP_FILE");
+assert.equal(api.statusTone(missingApp), "adverse");
+assert.equal(api.needsAttention(missingApp), true);
+const adverseAssets = api.filterAssets({ query: "", kind: "", owner: "", review: "adverse", attention: false });
+assert.equal(adverseAssets.length, 20);
+assert.ok(adverseAssets.some((asset) => asset.id === missingApp.id));
+const unknownAssets = api.filterAssets({ query: "", kind: "", owner: "", review: "unknown", attention: false });
+assert.equal(unknownAssets.length, 235);
+assert.ok(!unknownAssets.some((asset) => asset.id === missingApp.id));
+assert.match(elements.get("metricRail").innerHTML, /id="metricAdverse"[^>]*><strong>20<\/strong>/);
+assert.match(elements.get("metricRail").innerHTML, /id="metricUnknown"[^>]*><strong>235<\/strong>/);
 assert.match(api.revisionUrl(data.assets.find((asset) => asset.id === "szl-holdings/szl-science-forum-corpus")), /\/tree\/[0-9a-f]{40}$/);
 assert.equal(api.safeUrl("javascript:alert(1)"), "#");
 assert.equal(api.safeUrl("https://example.com/not-approved"), "#");
@@ -222,6 +234,12 @@ const hostileCsv = api.csvForAssets([{
 assert.ok(hostileCsv.startsWith("kind,id,owner,category,status,license,revision,url\r\n"));
 assert.ok(hostileCsv.includes("\"'=HYPERLINK(\"\"bad\"\")\""));
 assert.ok(hostileCsv.includes('"A, B"'));
+
+elements.get("metricAdverse").listeners.click();
+assert.equal(elements.get("reviewState").value, "adverse");
+assert.match(elements.get("assetGrid").innerHTML, /betterwithage\/foundation-confirmation-v2/);
+assert.equal(elements.get("assetGrid").innerHTML.match(/<article /g).length, 20);
+elements.get("resetFilters").listeners.click();
 
 elements.get("loadMore").listeners.click();
 assert.equal(elements.get("assetGrid").innerHTML.match(/<article /g).length, 48);

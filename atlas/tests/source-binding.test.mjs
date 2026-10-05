@@ -16,7 +16,7 @@ const importedPaths = [
   "tests/anatomy-projection.test.mjs",
 ];
 
-assert.equal(manifest.schema, "szl.atlas-source-binding/v1");
+assert.equal(manifest.schema, "szl.atlas-source-binding/v2");
 assert.equal(manifest.evidence_class, "DECLARED");
 assert.equal(manifest.canonical_source.repository, "szl-holdings/szl-showcase");
 assert.equal(manifest.canonical_source.path, "atlas");
@@ -25,6 +25,15 @@ assert.equal(manifest.historical_context.running_source_binding, "UNKNOWN");
 assert.equal(manifest.projection.payload_executable, false);
 assert.equal(manifest.projection.payload_authority, false);
 assert.deepEqual(manifest.files.map((file) => file.path), importedPaths);
+assert.equal(manifest.retained_import.repository, "szl-holdings/szl-showcase");
+assert.equal(manifest.retained_import.commit, "70c6888b24465fb62e721e1d666342ef601b2542");
+assert.equal(manifest.retained_import.evidence_class, "DECLARED");
+assert.equal(manifest.derivation.base_commit, manifest.retained_import.commit);
+assert.deepEqual(manifest.retained_import.files.map((file) => file.path), importedPaths);
+assert.deepEqual(
+  manifest.files.filter((file, index) => file.git_blob !== manifest.retained_import.files[index].git_blob).map((file) => file.path),
+  ["build-atlas.mjs", "dist/index.html", "tests/anatomy-projection.test.mjs"],
+);
 assert.equal(fs.existsSync(path.join(root, ".openai")), false, "provider control binding must stay out of source import");
 
 const retainedBytes = new Map();
@@ -59,6 +68,7 @@ function canonical(value) {
 function digest(value) {
   return crypto.createHash("sha256").update(JSON.stringify(canonical(value))).digest("hex");
 }
+assert.equal(digest(manifest.retained_import.files), "240c96973ff3387e2d0c14f9379481660c1f18da8212469983cf0e46e84c4bfa", "retained import identities changed");
 assert.equal(digest(data), manifest.projection.sha256);
 assert.equal(digest(JSON.parse(retainedBytes.get("dist/anatomy-control-plane.json"))), manifest.projection.anatomy_sha256);
 
@@ -87,4 +97,4 @@ try {
   fs.rmSync(resolved, { recursive: true, force: true });
 }
 
-console.log("Atlas source hashes and offline build reproduction passed");
+console.log("Atlas retained identities, current source hashes and offline build reproduction passed");

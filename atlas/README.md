@@ -1,12 +1,21 @@
-# SZL Frontier Atlas retained source
+# SZL Frontier Atlas retained source and reviewed derivatives
 
 This directory proposes a GitHub source binding for the recovered Atlas bundle
 in `szl-holdings/szl-showcase`. The binding becomes canonical after protected
-merge. The five imported files preserve the exact retained source and output
-bytes from source revision
-`016bb9a6dc75d739617a11b1eb92c47a25a29a36`, associated with historical Site version
-4. [SOURCE.json](SOURCE.json) records their sizes, SHA-256 hashes, and Git blob
-identities. Resolve the manifest and files together at one GitHub commit.
+merge. The five original imported files remain available byte for byte at GitHub
+commit `70c6888b24465fb62e721e1d666342ef601b2542`. Their declared historical context
+is cloud source revision `016bb9a6dc75d739617a11b1eb92c47a25a29a36`, associated
+with Site version 4; that declaration is not independent proof of cloud history.
+[SOURCE.json](SOURCE.json) v2 preserves the original sizes, SHA-256 hashes, and
+Git blobs under `retained_import`, pinned to that GitHub import commit. Its
+`files` list binds the current files, resolved together with this manifest at
+one GitHub commit.
+
+The current builder, generated HTML, and projection test are reviewed derivatives
+of that retained import. They classify the observed `NO_APP_FILE` Space failure
+as adverse evidence and check its count and filter behavior. They are not the
+original cloud bytes. This classification repair does not refresh observations
+or change the packaged estate/Anatomy projection data or its digests.
 
 The retained [public Site](https://szl-frontier-atlas.stephenlutar2.chatgpt.site)
 is a separate publication surface. Its current publication and running-source
@@ -32,11 +41,12 @@ node atlas/tests/anatomy-projection.test.mjs
 node atlas/tests/source-binding.test.mjs
 ```
 
-The retained projection contract checks public-only data, fixed projection
+The current projection contract checks public-only data, fixed projection
 digests, simulated payload boundaries, filtering, pagination, export escaping,
-and interactions. The binding contract checks the imported bytes against the
-manifest and rebuilds a temporary copy, comparing its generated output byte for
-byte. It leaves the tracked bundle untouched.
+and interactions. The binding contract checks the current bytes against the
+current `files` manifest, preserves the pinned retained-import identity list,
+and rebuilds a temporary copy, comparing its generated output byte for byte.
+It leaves the tracked bundle untouched.
 
 The provider control binding is excluded from this directory. Its original
 bytes and the full six-file source readback are retained in private recovery
