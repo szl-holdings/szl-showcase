@@ -1,0 +1,65 @@
+{
+  "schema": "szl.public.anatomy-control-plane.v1",
+  "title": "Anatomy Control Plane — Evidence Boundary Lab",
+  "summary": "A fixed, synthetic demonstration of fail-closed intent and evidence outcomes. It is advisory, non-executable, and does not authenticate identities or verify signatures.",
+  "payload": {
+    "sha256": "0cd7b69c54f1dec92f390ed001c925bea3c7ef6197ca6c3358894fc0328836b5",
+    "size_bytes": 26286,
+    "license": "Apache-2.0",
+    "provenance": "User-supplied attachment; no repository or source revision was established.",
+    "self_check": {
+      "label": "Synthetic Python-twin regression",
+      "passed": 12,
+      "failed": 0,
+      "executable": false,
+      "authority": false
+    }
+  },
+  "related_implementation": {
+    "label": "Related public Anatomy Ledger implementation",
+    "url": "https://github.com/szl-holdings/a11oy/tree/059dc5bdd9358e8c51af442d7f052ea2d2d9b74b/anatomy-ledger",
+    "revision": "059dc5bdd9358e8c51af442d7f052ea2d2d9b74b",
+    "relationship": "Related implementation observed in the estate snapshot; not proven to be the source of the uploaded payload."
+  },
+  "scenarios": [
+    {
+      "id": "read-advisory",
+      "label": "Read request",
+      "outcome": "SIMULATED_ALLOW",
+      "detail": "The Python twin finds the supplied attributes eligible for a read, but authenticates no identity and dispatches nothing.",
+      "executable": false,
+      "identityAuthenticated": false
+    },
+    {
+      "id": "cross-tenant",
+      "label": "Cross-tenant request",
+      "outcome": "BLOCK",
+      "detail": "Mismatched tenant identifiers are denied by the advisory evaluator.",
+      "executable": false,
+      "identityAuthenticated": false
+    },
+    {
+      "id": "unsigned-provenance",
+      "label": "Unsigned provenance",
+      "outcome": "REVIEW",
+      "detail": "A structurally valid statement without a fresh trusted verifier result cannot become release authority.",
+      "executable": false,
+      "identityAuthenticated": false
+    },
+    {
+      "id": "empty-ledger",
+      "label": "Empty evidence ledger",
+      "outcome": "EMPTY",
+      "detail": "Zero admitted records remain zero; the demonstration does not seed synthetic attestations.",
+      "recordCount": 0,
+      "executable": false,
+      "identityAuthenticated": false
+    }
+  ],
+  "boundaries": [
+    "No Cedar CLI, OPA engine, Sigstore verifier, or DSSE signature verification ran in the uploaded one-shot.",
+    "Caller-supplied approval, MFA, identity, and verification fields are not trusted authority.",
+    "The raw attachment and its loopback HTTP server are not published by this showcase.",
+    "The related a11oy package remains the canonical public implementation; protected merge and deployment are separate gates."
+  ]
+}

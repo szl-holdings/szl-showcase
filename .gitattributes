@@ -1,0 +1,6 @@
+# Preserve the five retained Atlas files byte for byte on every checkout.
+atlas/.gitignore -text
+atlas/build-atlas.mjs -text
+atlas/dist/index.html -text
+atlas/dist/anatomy-control-plane.json -text
+atlas/tests/anatomy-projection.test.mjs -text
