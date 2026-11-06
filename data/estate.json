@@ -29,7 +29,7 @@
     {
      "name": "a11oy.net",
      "url": "https://a11oy.net",
-     "desc": "The proof registry. RECORD, GovernedAction/v1 spec, diligence paths, pricing, known bounds.",
+     "desc": "The proof registry. RECORD, GovernedAction/v1 spec, diligence paths, known bounds. It publishes no price list (withdrawn 2026-09-26).",
      "kind": "proof",
      "status": "200 \u00b7 GitHub Pages \u00b7 DNSSEC"
     },
