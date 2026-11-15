@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please credit SZL Holdings."
+title: "szl-showcase - SZL Holdings ecosystem showcase â€” AI that signs its work. Static page rendered from a dated audit snapshot; every card links to its canonical source. (private until the public launch is authorized) (SZL Holdings governed-AI estate)"
+authors:
+  - name: SZL Holdings
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/szl-holdings/szl-showcase"
+keywords:
+  - governed-ai
+  - provenance
+  - szl-holdings
