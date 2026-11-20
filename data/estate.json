@@ -1,17 +1,17 @@
 {
- "observed": "2026-10-01T01:10Z",
+ "observed": "2026-11-20T03:48Z",
  "counts": {
-  "repos": 132,
-  "active": 103,
-  "public_active": 92,
+  "repos": 182,
+  "active": 153,
+  "public_active": 148,
   "archived": 29,
-  "models": 50,
-  "datasets": 35,
-  "spaces": 33,
-  "spaces_reachable": 33,
+  "models": 413,
+  "datasets": 173,
+  "spaces": 79,
+  "spaces_reachable": 78,
   "kernels": 15,
   "pypi": 19,
-  "open_prs": 24
+  "open_prs": 63
  },
  "layers": [
   {
@@ -22,33 +22,33 @@
     {
      "name": "a-11-oy.com",
      "url": "https://a-11-oy.com",
-     "desc": "The product. A11oy living command fabric \u2014 governed actions that emit DSSE-signed, hash-chained receipts.",
+     "desc": "The product. A11oy living command fabric — governed actions that emit DSSE-signed, hash-chained receipts.",
      "kind": "product",
-     "status": "200 \u00b7 Cloudflare \u00b7 HF Docker Space origin"
+     "status": "200 · Cloudflare · HF Docker Space origin"
     },
     {
      "name": "a11oy.net",
      "url": "https://a11oy.net",
      "desc": "The proof registry. RECORD, GovernedAction/v1 spec, diligence paths, known bounds. It publishes no price list (withdrawn 2026-09-26).",
      "kind": "proof",
-     "status": "200 \u00b7 GitHub Pages \u00b7 DNSSEC"
+     "status": "200 · GitHub Pages · DNSSEC"
     },
     {
      "name": "github.com/szl-holdings",
      "url": "https://github.com/szl-holdings",
-     "desc": "Canonical source. 132 repositories, 103 active, org-wide control plane in .github.",
+     "desc": "Canonical source. 182 repositories, 153 active, org-wide control plane in .github.",
      "kind": "source",
-     "status": "132 repos \u00b7 24 open PRs"
+     "status": "182 repos · 63 open PRs"
     },
     {
      "name": "huggingface.co/SZLHOLDINGS",
      "url": "https://huggingface.co/SZLHOLDINGS",
      "desc": "Artifacts. Models, software kernels, datasets, and Spaces published from GitHub source.",
      "kind": "artifacts",
-     "status": "50 models \u00b7 35 datasets \u00b7 33 Spaces"
+     "status": "413 models · 173 datasets · 79 Spaces"
     },
     {
-     "name": "PyPI \u00b7 betterwithage",
+     "name": "PyPI · betterwithage",
      "url": "https://pypi.org/user/betterwithage/",
      "desc": "The receipt stack, installable. OIDC trusted publishing, PEP 740 attestations.",
      "kind": "packages",
@@ -94,7 +94,7 @@
     {
      "name": "david-leads",
      "url": "https://github.com/szl-holdings/david-leads",
-     "desc": "Public insurance-intelligence vertical: receipt-per-decision scoring, \u039b-spine, DSSE with honest unsigned fallback, offline verifier.",
+     "desc": "Public insurance-intelligence vertical: receipt-per-decision scoring, Λ-spine, DSSE with honest unsigned fallback, offline verifier.",
      "lang": "Python",
      "pushed": "2026-09-30",
      "private": false,
@@ -125,7 +125,7 @@
     {
      "name": "Finance",
      "url": "https://huggingface.co/spaces/SZLHOLDINGS/finance",
-     "desc": "PURIQ Finance \u2014 receipted analytics backend.",
+     "desc": "PURIQ Finance — receipted analytics backend.",
      "role": "Vertical",
      "status": "RUNNING"
     },
@@ -161,7 +161,7 @@
   {
    "id": "proof",
    "title": "Proof and receipt layer",
-   "lede": "The part that makes the rest checkable. Formats, signers, ledgers, witnesses, and a Lean 4 boundary that keeps \u039b a labeled conjecture.",
+   "lede": "The part that makes the rest checkable. Formats, signers, ledgers, witnesses, and a Lean 4 boundary that keeps Λ a labeled conjecture.",
    "items": [
     {
      "name": "governed-receipt-spec",
@@ -216,7 +216,7 @@
     {
      "name": "lutar-lean",
      "url": "https://github.com/szl-holdings/lutar-lean",
-     "desc": "Lean 4 + Mathlib formalization of the \u039b aggregator. \u039b uniqueness stays Conjecture 1.",
+     "desc": "Lean 4 + Mathlib formalization of the Λ aggregator. Λ uniqueness stays Conjecture 1.",
      "lang": "Lean",
      "pushed": "2026-10-01",
      "private": false,
@@ -286,7 +286,7 @@
     {
      "name": "prove-it",
      "url": "https://szlholdings-prove-it.static.hf.space/",
-     "desc": "Offline receipt verifier \u2014 static, runs in your browser, no server trust.",
+     "desc": "Offline receipt verifier — static, runs in your browser, no server trust.",
      "role": "Offline verifier",
      "status": "200"
     }
@@ -667,7 +667,7 @@
      "lang": "Python",
      "pushed": "2026-10-01",
      "private": false,
-     "role": "Command Center \u00b7 public demo",
+     "role": "Command Center · public demo",
      "surface": null
     }
    ]
@@ -675,7 +675,7 @@
   {
    "id": "research",
    "title": "Research and holographic surfaces",
-   "lede": "Preprints and proofs on one side; the experimental, holographic estate on the other \u2014 labeled as such.",
+   "lede": "Preprints and proofs on one side; the experimental, holographic estate on the other — labeled as such.",
    "items": [
     {
      "name": "szl-papers",
